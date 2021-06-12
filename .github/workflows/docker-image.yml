@@ -22,6 +22,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Fetch terraform-aws-base-instance
       run: git clone git@bitbucket.org:swimcloud-project/terraform-aws-base-instance.git
+    - run: ls
     - name: Install Dependancies
       run: pip3 install gitpython pathlib
     - name: Run script
