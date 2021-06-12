@@ -24,6 +24,8 @@ jobs:
       with:
         repository: ebdmuir/contributions
         path: contributions
+    - name: Add git config
+      run: git config --global user.name "Eric Muir" && git config --global user.email "hello@ebdm.dev"
     - name: Fetch terraform-aws-base-instance
       run: git clone git@bitbucket.org:swimcloud-project/terraform-aws-base-instance.git
     - name: Fetch backend-api
