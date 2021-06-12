@@ -1,0 +1,22 @@
+[
+	{
+		"name": "terraform-aws-base-instance",
+		"repo": "git@bitbucket.org:swimcloud-project/terraform-aws-base-instance.git"
+	},
+	{
+		"name": "backend-api",
+		"repo": "git@bitbucket.org:swimcloud-project/backend-api.git"
+	},
+	{
+		"name": "web-applications",
+		"repo": "git@bitbucket.org:swimcloud-project/web-applications.git"
+	},
+	{
+		"name": "customer-portal",
+		"repo": "git@bitbucket.org:swimcloud-project/customer-portal.git"
+	},
+	{
+		"name": "lesson-finder",
+		"repo": "git@bitbucket.org:swimcloud-project/lesson-finder.git"
+	}
+]
