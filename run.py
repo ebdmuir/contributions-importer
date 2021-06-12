@@ -2,10 +2,10 @@ import git
 from git_contributions_importer import *
 # Your private repo or Bitbucket repo
 tfbaseinstance = git.Repo("terraform-aws-base-instance")
-# swimcloudbackend = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/backend-api")
-# swimcloudwebapps = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/web-applications")
-# swimcloudfinder = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/lesson-finder")
-# swimcloudportal = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/customer-portal")
+swimcloudbackend = git.Repo("backend-api")
+swimcloudwebapps = git.Repo("web-applications")
+swimcloudfinder = git.Repo("lesson-finder")
+swimcloudportal = git.Repo("customer-portal")
 # Your mock repo
 mock_repo = git.Repo("contributions")
 importer = Importer([tfbaseinstance, swimcloudbackend, swimcloudwebapps, swimcloudfinder, swimcloudportal], mock_repo) # I use both my personal email and work email here,
