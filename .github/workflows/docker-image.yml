@@ -20,6 +20,10 @@ jobs:
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
         if_key_exists: replace
     - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+      with:
+        repository: ebdmuir/contributions
+        path: contributions
     - name: Fetch terraform-aws-base-instance
       run: git clone git@bitbucket.org:swimcloud-project/terraform-aws-base-instance.git
     - run: ls
