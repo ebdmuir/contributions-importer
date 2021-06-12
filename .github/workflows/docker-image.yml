@@ -30,3 +30,6 @@ jobs:
       run: pip3 install gitpython pathlib
     - name: Run script
       run: python3 run.py
+      env:
+        REPOS: ${{ secrets.REPOS }}
+        EMAILS: ${{ secrets.EMAILS }}
