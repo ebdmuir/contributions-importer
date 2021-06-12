@@ -6,8 +6,9 @@ data = json.load(open('data.json', 'r'))
 repos = []
 
 for item in data:
-	git.Repo.clone_from(item.repo, item.name)
-	repos.append(git.Repo(item.name))
+	print(item)
+	git.Repo.clone_from(item['repo'], item['name'])
+	repos.append(git.Repo(item['name']))
 
 # Your mock repo
 mock_repo = git.Repo("contributions")
