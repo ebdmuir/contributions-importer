@@ -33,3 +33,5 @@ jobs:
       env:
         REPOS: ${{ secrets.REPOS }}
         EMAILS: ${{ secrets.EMAILS }}
+    - name: Push changes
+      run: cd contributions && git push
