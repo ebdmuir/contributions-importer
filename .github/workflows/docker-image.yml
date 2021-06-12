@@ -19,7 +19,7 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_KEY }}
     - uses: actions/checkout@v2
     - name: Fetch terraform-aws-base-instance
-      run: git clone https://ericmuir@bitbucket.org/swimcloud-project/terraform-aws-base-instance.git
+      run: git clone git@bitbucket.org:swimcloud-project/terraform-aws-base-instance.git
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag contributions:$GITHUB_SHA
     - name: Run the Docker image
