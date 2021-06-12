@@ -7,7 +7,7 @@ tfbaseinstance = git.Repo("terraform-aws-base-instance")
 # swimcloudfinder = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/lesson-finder")
 # swimcloudportal = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/customer-portal")
 # Your mock repo
-mock_repo = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/contributions")
+mock_repo = git.Repo("contributions")
 importer = Importer([tfbaseinstance, swimcloudbackend, swimcloudwebapps, swimcloudfinder, swimcloudportal], mock_repo) # I use both my personal email and work email here,
 # Since the private repo uses work email, and Github profiles uses
 # my work email
