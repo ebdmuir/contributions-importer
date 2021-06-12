@@ -3,8 +3,8 @@ from git_contributions_importer import *
 import json
 import os
 
-emails = json.load(os.environ['EMAILS'])
-data = json.load(os.environ['REPOS'])
+emails = json.loads(os.environ['EMAILS'])
+data = json.loads(os.environ['REPOS'])
 repos = []
 
 for item in data:
