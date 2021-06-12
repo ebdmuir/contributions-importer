@@ -25,4 +25,4 @@ jobs:
     - name: Install Dependancies
       run: pip3 install gitpython pathlib
     - name: Run script
-      run: 
+      run: python3 run.py
