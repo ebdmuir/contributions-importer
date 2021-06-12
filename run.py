@@ -1,8 +1,10 @@
 import git 
 from git_contributions_importer import *
 import json
+import os
 
-data = json.load(open('data.json', 'r'))
+emails = json.load(os.environ['EMAILS'])
+data = json.load(os.environ['REPOS'])
 repos = []
 
 for item in data:
@@ -15,5 +17,5 @@ mock_repo = git.Repo("contributions")
 importer = Importer(repos, mock_repo) # I use both my personal email and work email here,
 # Since the private repo uses work email, and Github profiles uses
 # my work email
-importer.set_author(['eric@ebdm.dev', 'eric.muir@swimtime.org', 'www-data@ip-172-0-253-183.eu-west-2.compute.internal', 'www-data@ip-172-0-46-95.eu-west-2.compute.internal', 'ericmuir@protonmail.com', 'ericmuir@Erics-iMac.local', 'ebdmuir@gmail.com'])
+importer.set_author(emails)
 importer.import_repository()
