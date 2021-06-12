@@ -26,17 +26,6 @@ jobs:
         path: contributions
     - name: Add git config
       run: git config --global user.name "Eric Muir" && git config --global user.email "hello@ebdm.dev"
-    - name: Fetch terraform-aws-base-instance
-      run: git clone git@bitbucket.org:swimcloud-project/terraform-aws-base-instance.git
-    - name: Fetch backend-api
-      run: git clone git@bitbucket.org:swimcloud-project/backend-api.git
-    - name: Fetch web-applications
-      run: git clone git@bitbucket.org:swimcloud-project/web-applications.git
-    - name: Fetch lesson-finder
-      run: git clone git@bitbucket.org:swimcloud-project/lesson-finder.git
-    - name: Fetch customer-portal
-      run: git clone git@bitbucket.org:swimcloud-project/customer-portal.git
-    - run: ls
     - name: Install Dependancies
       run: pip3 install gitpython pathlib
     - name: Run script
