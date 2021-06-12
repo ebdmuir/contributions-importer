@@ -1,7 +1,7 @@
 import git 
 from git_contributions_importer import *
 # Your private repo or Bitbucket repo
-tfbaseinstance = git.Repo("./franscape-base-instance")
+tfbaseinstance = git.Repo("franscape-base-instance")
 # swimcloudbackend = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/backend-api")
 # swimcloudwebapps = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/web-applications")
 # swimcloudfinder = git.Repo("/Users/ericmuir/Library/Mobile Documents/com~apple~CloudDocs/Projects/swimtime/lesson-finder")
