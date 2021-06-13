@@ -6,7 +6,7 @@ This is an automated tool for importing third party repositories into your contr
 
 - Second create a contributions repository
 
-- Finally add the secrets to your forked version of this repository and next run it'll sort your contributions out
+- Finally add the secrets to your forked version of this repository and next workflow run it'll sort your contributions out
 
 Needed secrets:
 
