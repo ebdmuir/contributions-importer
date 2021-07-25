@@ -34,4 +34,4 @@ jobs:
         REPOS: ${{ secrets.REPOS }}
         EMAILS: ${{ secrets.EMAILS }}
     - name: Push changes
-      run: cd contributions && git push
+      run: cd contributions && git push --force "https://${{ env.GIT_USERNAME }}:${{ secrets.GH_ACCESS_TOKEN }}@${{ secrets.EXPORT_REPO }}"
